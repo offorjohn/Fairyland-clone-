@@ -23,13 +23,16 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function HeaderBox() {
   return (
     <Box
-      sx={{
-        height: '10vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
+    sx={{
+      height: {
+        xs: '15vh',  // on extra-small screens (mobile)
+        sm: '10vh',  // small screens and up
+      },
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+  >
       <Box
         sx={{
           width: {
