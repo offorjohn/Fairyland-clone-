@@ -83,7 +83,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
                 rowGap: 0.5,
               }}
             >
-              <Typography component="span" fontWeight={200} color="#333333">
+              <Typography component="span" fontWeight={900} color="#333333">
                 Welcome, john1101(m):
               </Typography>
               {menuItems.map(({ label, to,  }, index) => (
@@ -95,7 +95,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
                   {index !== 0 && (
                     <Typography
                       component="span"
-                      sx={{ mx: 0.3, fontWeight: 200, color: '#333333' }}
+                      sx={{ mx: 0.3, fontWeight: 500, color: '#333333' }}
                     >
                       /
                     </Typography>
@@ -104,7 +104,7 @@ const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
                     component={external ? 'a' : RouterLink}
                     {...(external ? { href: to, target: '_blank', rel: 'noopener noreferrer' } : { to })}
                     underline="hover"
-                    sx={{ fontWeight: 200, color: '#333333' }}
+                    sx={{ fontWeight: 700, color: '#333333' }}
                   >
                     {label}
                   </Link>
