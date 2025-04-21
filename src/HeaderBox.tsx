@@ -44,15 +44,22 @@ export default function HeaderBox() {
       >
         <Stack spacing={2}>
           <Item>
-            <Typography
-              variant="h6"
-              fontWeight={900}
-              color="#006600"
-              gutterBottom={false} // remove the default bottom margin
-              sx={{ mt: -1.5 }} // move it up
+            <Link
+              component={RouterLink}
+              to="/"
+              underline="none"
+              sx={{ cursor: "pointer" }}
             >
-              Nairaland Clone
-            </Typography>
+              <Typography
+                variant="h6"
+                fontWeight={900}
+                color="#006600"
+                gutterBottom={false}
+                sx={{ mt: -1.5 }}
+              >
+                Nairaland Clone
+              </Typography>
+            </Link>
 
             <Box
               sx={{
