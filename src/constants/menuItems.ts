@@ -3,7 +3,7 @@
 export const menuItems = [
     { label: 'Edit Profile', to: '/profile/edit' },
     { label: 'SH', to: '/sh' },
-    { label: 'FT', to: '/topics/followed' },
+    { label: 'Followed Topics', to: '/topics/followed' },
     { label: 'FB', to: '/fb' },
     { label: 'L&S', to: '/ls' },
     { label: 'MT', to: '/mt' },
